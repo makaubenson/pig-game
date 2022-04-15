@@ -17,6 +17,8 @@ btnRoll.addEventListener('click', function () {
   // 1. Generating random dice roll
   const dice = Math.trunc(Math.random() * 6) + 1; // Generates random number between 1 and 6
   //2. Display Dice
+  diceEl.classList.remove('hidden');
+  diceEl.src = `dice-${dice}.png`;
 
   //3. Check for rolled 1 : if true switch to the next player
 });
